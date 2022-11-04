@@ -54,7 +54,7 @@ print ("confusion matrix")
 print(confmat)
 print (pd.crosstab(y_test, prediction, rownames=['True'], colnames=['Predicted'], margins=True))
 
-#Logistic REGRESSION CLASSIFIER
+#LOGISTIC REGRESSION CLASSIFIER
 clfLog = LogisticRegression()
 clfLog = clfLog.fit(X_train,y_train)
 prediction = clfLog.predict(X_test)
@@ -67,7 +67,7 @@ print(confmat)
 print (pd.crosstab(y_test, prediction, rownames=['True'], colnames=['Predicted'], margins=True))
 
 
-#DECISION REGRESSION CLASSIFIER
+#DECISION TREE CLASSIFIER
 clfDT = DecisionTreeClassifier()
 clfDT = clfDT.fit(X_train,y_train)
 prediction = clfDT.predict(X_test)
